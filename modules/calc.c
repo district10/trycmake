@@ -11,6 +11,6 @@ int main ( int argc, char **argv )
     fprintf(stdout, "Square of %5.2f is %10.6f\n", x, square(x));
     fprintf(stdout, "Cubic  of %5.2f is %10.6f\n", x, cubic(x));
 
-	getchar();
+    getchar();
     exit(EXIT_SUCCESS);
 }
