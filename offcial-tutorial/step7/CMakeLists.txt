@@ -13,16 +13,14 @@ check_function_exists (exp HAVE_EXP)
 # should we use our own math functions
 option(USE_MYMATH "Use tutorial provided math implementation" ON)
 
-# configure a header file to pass some of the CMake settings
-# to the source code
+# configure a header file to pass some of the CMake settings to the source code
 configure_file (
-  "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
-  "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+  "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"       # <--config-- TutorialConfig.h.in
+  "${PROJECT_BINARY_DIR}/TutorialConfig.h"          # ----> build/TutorialConfig.h
   )
 
-# add the binary tree to the search path for include files
-# so that we will find TutorialConfig.h
-include_directories ("${PROJECT_BINARY_DIR}")
+# add the binary tree to the search path for include files so that we will find TutorialConfig.h
+include_directories ("${PROJECT_BINARY_DIR}")       # build/TutorialConfig.h
 
 # add the MathFunctions library?
 if (USE_MYMATH)
@@ -32,11 +30,11 @@ if (USE_MYMATH)
 endif (USE_MYMATH)
 
 # add the executable
-add_executable (Tutorial tutorial.cxx)
-target_link_libraries (Tutorial  ${EXTRA_LIBS})
+add_executable (Tutorial tutorial.cxx)             # Tutorial.exe or Tutorial(+x)
+target_link_libraries (Tutorial  ${EXTRA_LIBS})    # bind libs
 
 # add the install targets
-install (TARGETS Tutorial DESTINATION bin)
+install (TARGETS Tutorial DESTINATION bin)         # install TARGETS to DESTINATION
 install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h" 
   DESTINATION include)
 
