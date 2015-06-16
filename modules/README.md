@@ -2,7 +2,7 @@
 
 This demo shows how to organize code with CMake.
 
-[calc.c](calc.c) use two modules:
+[calc.c](calc.c) uses two modules:
 
 * module [square](square)
 * module [cubic](cubic)
