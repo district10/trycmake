@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "square.h"
+#include "cubic.h"
 
 int main ( int argc, char **argv )
 {
-    int x = 26;
-    puts("Hello CMake");
-    fprintf(stdout, "Square of %d is %d\n", x, x*x);
+    // puts("Hello CMake");
 
+    double x = 9.8;
+    fprintf(stdout, "Square of %5.2f is %10.6f\n", x, square(x));
+    fprintf(stdout, "Cubic  of %5.2f is %10.6f\n", x, cubic(x));
+
+	getchar();
     exit(EXIT_SUCCESS);
 }
