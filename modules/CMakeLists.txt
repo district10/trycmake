@@ -1,5 +1,5 @@
 # cmake & project
-cmake_minimum_required (VERSION 3.2)
+cmake_minimum_required (VERSION 2.6)
 project (CALC)
 
 # module square
@@ -15,6 +15,3 @@ set (EXTRA_LIBS ${EXTRA_LIBS} LibCubic)
 # how to compile & link executable?
 add_executable(Calc calc.c)
 target_link_libraries (Calc  ${EXTRA_LIBS})
-
-# add the install targets
-install (TARGETS Calc DESTINATION bin)
