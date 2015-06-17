@@ -7,8 +7,9 @@
 * g++ ==>
 
 ```bash
-uic mainwindow.ui -o mainwindow.h
-moc mainwindow.h  -o mainwindow.cpp
+uic mainwindow.ui  -o  ui_mainwindow.h
+moc mainwindow.h   -o moc_mainwindow.cpp
+rcc main.qrc       -o qrc_main.cpp
 g++ main.cpp mainwindow.cpp  moc_mainwindow.cpp \
 -IC:\Qt\4.8.4\include \
 -LC:\Qt\4.8.4\lib \

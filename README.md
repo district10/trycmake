@@ -10,4 +10,5 @@ Just for clarity.
 ### Notes
 * [CMake Notes](notes-cmake.md)
 * [Qt Notes](notes-qt.md)
+* [CMakeLists.txt Snippets](notes-cmake-snippets.md)
 * [Notes on Windows Configuration](notes-windows-configuration.md)
