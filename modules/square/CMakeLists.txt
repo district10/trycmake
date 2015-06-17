@@ -1,1 +1,1 @@
-add_library(LibSquare square.c)
+add_library( LibSquare square.c )

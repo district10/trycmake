@@ -1,1 +1,1 @@
-add_library(LibCubic cubic.c)
+add_library( LibCubic cubic.c )
