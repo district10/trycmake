@@ -2,10 +2,10 @@
 
 This demo shows how to organize code with CMake.
 
-[calc.c](calc.c) uses two modules:
+[calc.c](calc.c) uses two modules: (static link)
 
-* module [square](square) (static link)
-* module [cubic](cubic) (shared)
+* module [square](square)
+* module [cubic](cubic)
 
 好处是两个人可以分别开发 square 和 cubic，只需提供
 相应接口给 calc.c 即可：
