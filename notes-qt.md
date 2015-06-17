@@ -6,6 +6,7 @@
 * moc ==> mainwindow.h  --> mainwindow.cpp
 * g++ ==>
 
+```bash
 uic mainwindow.ui -o mainwindow.h
 moc mainwindow.h  -o mainwindow.cpp
 g++ main.cpp mainwindow.cpp  moc_mainwindow.cpp \
@@ -14,3 +15,4 @@ g++ main.cpp mainwindow.cpp  moc_mainwindow.cpp \
 -lQtCore4 \
 -lQtGui4 \
 -o main
+```
