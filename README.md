@@ -9,4 +9,5 @@ Just for clarity.
 
 ### Notes
 * [CMake Notes](notes-cmake.md)
+* [Qt Notes](notes-qt.md)
 * [Notes on Windows Configuration](notes-windows-configuration.md)

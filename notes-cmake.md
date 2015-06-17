@@ -96,7 +96,7 @@ check_include_file( unistd.h HAVE_UNISTD )
 
 `conf.h.in`:
 ```
-#cmakedfine VAL
+#cmakedefine VAL
 #define KEY @VALUE@
 ```
 
