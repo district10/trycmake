@@ -64,3 +64,17 @@ VS Extensions
 * VsVim
 * tssts
 
+### OpenGL
+
+
+http://www.opengl.org/resources/libraries/glut/glutdlls37beta.zip
+
+glut.h ==> C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\gl
+glut.lib glut32.lib ==> C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib
+glut.dll glut32.dll ==> C:\Windows\System32
+
+
+
+refs: 
+* http://blog.csdn.net/wlanye/article/details/7561559
+

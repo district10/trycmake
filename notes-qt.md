@@ -8,7 +8,7 @@
 
 ```bash
 uic mainwindow.ui  -o  ui_mainwindow.h
-moc mainwindow.h   -o moc_mainwindow.cpp
+moc mainwindow.h   -o moc_mainwindow.cpp  ==> Q_OBJECT
 rcc main.qrc       -o qrc_main.cpp
 g++ main.cpp mainwindow.cpp  moc_mainwindow.cpp \
 -IC:\Qt\4.8.4\include \
