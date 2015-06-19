@@ -1,1 +1,2 @@
-add_library( LibCubic cubic.c )
+file (GLOB CUBICS *.c)
+add_library( LibCubic ${CUBICS} )

@@ -12,3 +12,17 @@ Just for clarity.
 * [Qt Notes](notes-qt.md)
 * [CMakeLists.txt Snippets](notes-cmake-snippets.md)
 * [Notes on Windows Configuration](notes-windows-configuration.md)
+
+### Script: gen.sh
+
+```shell
+#!/bin/bash
+
+BUILD="build"
+rm -Rf $BUILD
+mkdir $BUILD && cd $BUILD && \
+cmake.exe -G"Visual Studio 10 2010 Win64" ../
+```
+
+
+
