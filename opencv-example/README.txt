@@ -1,4 +1,4 @@
-copied from OpenCV offcial.
+Copied from OpenCV official.
 
 ---
 
