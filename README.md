@@ -1,3 +1,7 @@
+请移步：[district10/cmake-templates: Some CMake Templates. Qt, Boost, OpenCV, C++11, etc.](https://github.com/district10/cmake-templates)。
+
+---
+
 # Try Some CMake, the cross-platform project builder
 
 I prefer
